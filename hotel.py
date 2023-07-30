@@ -26,11 +26,11 @@ while andar_solution2 <= 21:
     print(andar_solution2)
 
 
-# 3era soluçaõ
+# 3era soluçaõ em ordem decrescente
 
 andar_solution3 = 0
 
-for andar_solution3 in range(1,21):
+for andar_solution3 in range(1,21, -1):
     if andar_solution3 == 13:
         continue
     print(andar_solution3)
