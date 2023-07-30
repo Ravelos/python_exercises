@@ -7,3 +7,11 @@ Escreva mais dois códigos que resolvam o mesmo problema, mas dessa vez usando o
 Como desafio, imprima eles em ordem decrescente (20, 19, 18...)
 """
 
+andar = 0
+
+for i in range(20):
+    andar = andar + 1
+    if andar == 13:
+     continue
+    print (andar)
+
