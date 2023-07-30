@@ -11,21 +11,14 @@ Caso seja inserido um número de operação que não exista, o resultado deverá
 def calculator(num1, num2, operacao):
 
     if operacao == "soma":
-        resultado = num1 + num2
-        print(resultado)
-
+        return num1 + num2
     elif operacao == "subtração":
-        resultado = num1 - num2
-        print(resultado)
-
+        return num1 - num2
     elif operacao == "multiplicacao":
-        resultado = num1 * num2
-        print(resultado)
-
+        return num1 * num2
     elif operacao == "divisão":
-        resultado = num1 / num2
-        print(resultado)
+        return num1 / num2
     else:
-        print("Operação não permitida")
+        return 0
 
 calculator(1,5, "divisão")
