@@ -10,8 +10,31 @@ Como desafio, imprima eles em ordem decrescente (20, 19, 18...)
 andar = 0
 
 for i in range(20):
-    andar = andar + 1
+    andar += 1
     if andar == 13:
      continue
     print (andar)
+
+# Segunda solução
+
+andar_solution2 = 0
+
+while andar_solution2 <= 21:
+    andar_solution2 += 1
+    if andar_solution2 == 13:
+        continue
+    print(andar_solution2)
+
+
+# 3era soluçaõ
+
+andar_solution3 = 0
+
+for andar_solution3 in range(1,21):
+    if andar_solution3 == 13:
+        continue
+    print(andar_solution3)
+
+
+
 
