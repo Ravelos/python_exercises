@@ -22,3 +22,6 @@ def calculator(num1, num2, operacao):
         return 0
 
 calculator(1,5, "divisão")
+
+
+
