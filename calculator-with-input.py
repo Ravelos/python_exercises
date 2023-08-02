@@ -22,16 +22,15 @@ def calculator_with_inputs():
     num2= int(input("Ingrese o segundo número: "))
 
     if option == 1:
-      return num1 + num2
-
+      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1 + num2
+      
     elif option == 2:
-      return num1 - num2
+      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1 - num2
 
     elif option == 3:
-      return num1  * num2
-
+      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1  * num2
     elif option == 4:
-      return num1 / num2
+      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1 / num2
     else:
       print("Essa opção não existe")
 
