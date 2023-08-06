@@ -30,8 +30,6 @@ def calculator_with_input():
     selecao = int(input("Digite o número da opção:" ))
 
     if selecao == 0:
-      print("Saindo.")
-      print("Saindo..")
       print("Saindo...")
       break
     elif selecao == 1:
