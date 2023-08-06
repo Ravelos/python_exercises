@@ -14,25 +14,53 @@ Após a seleção, o sistema deve pedir para o usuário inserir o primeiro e seg
 É necessário que o sistema mostre as opções sempre que finalizar uma operação e mostrar o resultado
 """
 
-def calculator_with_inputs():
-  print("1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n")
-  option = int(input("Ingrese a opção: "))
-  while option != 0:
-    num1= int(input("Ingrese o primeiro número: "))
-    num2= int(input("Ingrese o segundo número: "))
 
-    if option == 1:
-      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1 + num2
-      
-    elif option == 2:
-      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1 - num2
+def calculator_with_input():
+  opcoes = [
+    "Soma",
+    "Subtração",
+    "Multiplicação",
+    "Divisão",
+    "Sair"
+  ]
 
-    elif option == 3:
-      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1  * num2
-    elif option == 4:
-      return "1: Soma \n" +"2: Subtração \n" +"3: Multiplicação \n" +"4: Divisão \n" + "0: Sair \n" num1 / num2
+  while True:
+    for indice, opcao in enumerate(opcoes):
+        print(f"{indice}: {opcao}")
+    selecao = int(input("Digite o número da opção:" ))
+
+    if selecao == 0:
+      print("Saindo.")
+      print("Saindo..")
+      print("Saindo...")
+      break
+    elif selecao == 1:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      res = num1 + num2
+      print(res)
+    elif selecao == 2:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      res = num1 - num2
+      print(res)
+    elif selecao == 3:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      res = num1 * num2
+      print(res)
+    elif selecao == 4:
+      num1 = int(input("Digite o primeiro número: "))
+      num2 = int(input("Digite o segundo número: "))
+      res = num1 / num2
+      print(res)
     else:
-      print("Essa opção não existe")
+      print("Opção inválida. Tente novamente.")
+    
+    
+calculator_with_input()    
+  
+
 
     
 
