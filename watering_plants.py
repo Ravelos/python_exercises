@@ -10,4 +10,4 @@ for i in range(1,5,2):
 plantas=["tomate", "batata", "tomate", "batata","tomate", "batata"]
 for planta in plantas:
     if planta !="batata":
-        print("Reguei a planta de ", element)
+        print("Reguei a planta de ", planta)
