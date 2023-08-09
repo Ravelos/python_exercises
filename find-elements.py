@@ -14,7 +14,7 @@
 
 # find_elements("Fernando", names)
 
-# Mariana, Fernanda, Jefferson, Oswaldo
+# Jefferson Jimenez, Oswaldo José, Fernanda Toledo, Mariana Rubert Grecco
 
 def find_elements_input(arr):
     elem = input("Digite o nome do elemento: ")
