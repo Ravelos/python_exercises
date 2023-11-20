@@ -34,3 +34,13 @@ def ecuacao_segundo_grau():
   print("O valor de x2 é : " , x2);
 
 ecuacao_segundo_grau()
+
+
+# Uma empresa está selecionando entre seus empregados os que irão fazer um
+# treinamento especial. O funcionário selecionado deve satisfazer a dois
+# critérios
+# ○ Salário menor ou igual a R$400,00 ou maior ou igual a R$1.000,00
+# ○ O funcionário deve ter mais de 5 anos de empresa
+# ● Escreva a expressão lógica que representa estes critérios
+
+# (salario <= 400 or salario>= 1.000) and tempo > 5
