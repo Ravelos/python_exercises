@@ -52,6 +52,7 @@ def mostrar_tabela():
 
 def main():
     while True:
+        print("*** Vamos inserir os pagamentos recebidos durante o mes *** \n")
         quantia = float(input("Insira o valor recebido no mês: "))
         data = input("Insira a data nesse formato (dd/mm/aaaa): ")
         adicionar_renda(quantia, datetime.datetime.strptime(data, '%d/%m/%Y').date())
@@ -60,8 +61,9 @@ def main():
             break
 
     while True:
-      quantia = float(input("Insira o valor a pagar: "))
+      print("\n *** Vamos inserir as despesas *** \n")
       while True:
+            quantia = float(input("Insira o valor a pagar: "))
             data_input = input("Insira a data nesse formato (dd/mm/aaaa): ")
             data = datetime.datetime.strptime(data_input, '%d/%m/%Y').date()
             data_atual = datetime.datetime.now().date()
